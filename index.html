@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <textarea name="inputText" id="inTxt" cols="30" rows="10" class="txtBox"
+            oninput="textReverse(this.value);"></textarea>
+
+        <div class="btns">
+            <button onclick="copyToClipboard()"><img
+                    src="https://www.textreverse.com/web_assets/frontend/image/copy_icon.svg"
+                    alt="Copy to clipboard"></button>
+            <button onclick="clearText()"><img
+                    src="https://www.textreverse.com/web_assets/frontend/image/clear_icon.svg"
+                    alt="Clear text"></button>
+        </div>
+
+        <textarea name="outputText" id="outTxt" cols="30" rows="10" class="txtBox" readonly></textarea>
+        <div id="popup" class="popup">Copied!</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
